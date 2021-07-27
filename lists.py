@@ -68,8 +68,9 @@ def smallest_int(numbers):
         >>> smallest_int([]) is None
         True
     """
-
-    return 100
+    numbers.sort()
+    print(numbers[0])
+    return 
 
 
 def largest_int(numbers):
