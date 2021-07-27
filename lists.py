@@ -178,8 +178,14 @@ def mult_numbers(numbers):
         >>> mult_numbers([])
         1
     """
+    total=1
+    for num in numbers:
+        total*=num
+    print(total)
 
-    return None
+
+
+    return 
 
 
 def join_strings(words):
