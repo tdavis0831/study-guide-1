@@ -2,7 +2,7 @@
 def print_list(items):
     for char in items:
         print(char)
-    return print_list
+    return 
 
 
 def long_words(words):
@@ -28,8 +28,6 @@ def long_words(words):
             wordsfourormore.append(char)
     print(wordsfourormore)
 
-        
-
     return 
 
 def n_long_words(words, n):
@@ -45,8 +43,13 @@ def n_long_words(words, n):
         >>> n_long_words(["I", "like", "apples", "bananas", "you"], 5)
         ['apples', 'bananas']
     """
+    longerthann=[]
 
-    return ['the wrong thing']
+    for char in words:
+        if len(char) > n:
+            longerthann.append(char)
+    print(longerthann)
+    return 
 
 
 def smallest_int(numbers):
