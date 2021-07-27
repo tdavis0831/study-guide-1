@@ -1,23 +1,8 @@
-"""List Practice
-Edit the functions until all of the doctests pass when
-you run this file.
-"""
-
 
 def print_list(items):
-    """Print each item in the input list.
-    
-    For example::
-    
-        >>> print_list([1, 2, 6, 3, 9])
-        1
-        2
-        6
-        3
-        9
-    """
-
-    print("the wrong thing")
+    for char in items:
+        print(char)
+    return print_list
 
 
 def long_words(words):
@@ -36,9 +21,16 @@ def long_words(words):
         >>> long_words(["all", "are", "tiny"])
         []
     """
+    wordsfourormore=[]
 
-    return ['the wrong thing']
+    for char in words:
+        if len(char)>4:
+            wordsfourormore.append(char)
+    print(wordsfourormore)
 
+        
+
+    return 
 
 def n_long_words(words, n):
     """Return words in list longer than `n` characters.
