@@ -89,8 +89,9 @@ def largest_int(numbers):
         >>> largest_int([]) is None
         True
     """
-
-    return 0
+    numbers.sort()
+    print(numbers[-1])
+    return 
 
 
 def halvesies(numbers):
